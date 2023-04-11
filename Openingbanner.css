@@ -1,0 +1,102 @@
+/*더 잠실체*/
+
+@charset "utf-8";
+
+    
+* {
+	margin: 0;
+	padding: 0;
+}
+
+img,
+video,
+iframe {
+	vertical-align: middle;
+    
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+body {
+	font-family: 'TheJamsil';
+	font-size:12px;
+	line-height:22px;
+	color: #423730;
+    font-style: normal;
+    font-display: swap;
+	min-width:1550px;
+	
+}
+#A{
+	display: flex;
+	}
+
+.aa{
+    background-image: url(./images/opa.jpg);
+	height: 100vh;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	background-repeat: no-repeat ;
+	
+}
+
+.bb{
+	background-image: url(./images/opb.jpg);
+	width: 50%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	background-repeat: no-repeat ;
+}
+
+.aa h3{
+	font-size: 50px;
+	color: #fafafa;
+	margin-left: 50px;
+	margin-bottom: 50px;
+}
+
+
+
+.bb h3{
+	font-size: 50px;
+	color: #fafafa;
+	padding-left: 20px;
+	
+}
+
+.aa p{
+	font-size: 20px;
+	color: #fafafa;
+	
+	padding-left: 50px;
+	padding-top: 20px;
+}
+
+.bb p{
+font-size: 20px;
+color: #fafafa;
+padding-left: 30px;
+padding-top: 20px;
+}
+
+.cc{
+	padding-bottom: 200px;
+}
+
+.dd{
+	padding-bottom: 200px;
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1550">
+    <title>Pandaburger</title>
+    <link rel="shortcut icon" href="./images/ccc.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./Pand.css">
+    <link rel="stylesheet" href="./font/stylesheet.css">
+
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="logo">
+            <a href="./index.html"><img src="./images/a.png" alt="로고이미지"></a>
+        </h1>
+        <ul>
+            <li><a href="#">브랜드소개</a></li>
+            <li><a href="#menu">메뉴안내</a></li>
+            <li><a href="#mush_a">매장찾기</a></li>
+            <li><a href="#vi_a">이벤트</a></li>
+            <li><a href="#in">인스타그램</a></li>
+            <li><a href="#you_c">유튜브</a></li>
+
+        </ul>
+        <a href="./Serve.html" class="AA">창업홈페이지</a>
+    </div>
+    </div>
+    <div class="swiper mb">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./images/c.jpg" alt="">
+
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/d.jpg" alt="">
+
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/b.jpg" alt="">
+
+            </div>
+        </div>
+        <div class="swiper-button-next mb_next"></div>
+        <div class="swiper-button-prev mb_prev"></div>
+        <div class="swiper-pagination mb_pag"></div>
+
+    </div>
+
+
+
+    <!-- Initialize Swiper -->
+
+    <div id="menu">
+        <div class="munu_in">
+
+
+            <h1 class="panda"> <span style="color:#9f4912;">PANDA</span> <span style="color: #f26233;">BURGER</span>
+                <span style="color: #64bc46;">MENU</span></h1>
+            <h3 class="panda_a"> <span style="color: #db8b37;"> 가장 맛있는 판다버거를 골라보세요!</span></h3>
+            <div id="arrow_image">
+                <!--화살표의 포지션 기준이 될 다른 박스요소-->
+                <div class="swiper card4_img">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./images/1.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/2.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/3.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/4.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/5.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/6.png" alt=""></div>
+                    </div>
+                </div>
+                <!--card E-->
+                <!--화살표추가. 화살표 위치 변경 확인하세요! 반드시 추가이름 더 넣어주세요-->
+                <div class="swiper-button-next card4_img_next"></div>
+                <div class="swiper-button-prev card4_img_prev"></div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mb", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".card4_img", {
+            navigation: {
+                nextEl: ".card4_img_next",
+                prevEl: ".card4_img_prev",
+            },
+
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            /*4번째 이미지에서 다음 키를 누르면 바로 첫번째 이미지가 나오게 한다*/
+            slidesPerView: 3,
+            /*한번에 보이는 slide개수 설정*/
+            spaceBetween: 30,
+            /*슬라이드 사이의 공간 설정*/
+        });
+    </script>
+
+    <div id="mush_a">
+        <div class="mush_d">
+            <h1 class="mush_b"><span style="color: #64bc46;">SEARCH</span><span style="color:#f26233;">STORE</span></h1>
+            <h3 class="mush_c"><span style="color:#db8b37;">가까운 판다버거 매장을 찾아보세요!</span></h3>
+            <input type="text" class="bb" placeholder="매장바로찾기">
+        </div>
+        <div>
+            <div class="logo_a"><img src="./images/7.png" alt=""></div>
+        </div>
+    </div>
+
+
+    <div class="swiper mb2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <video src="./images/1.mp4" autoplay muted loop width="100%"></video>
+
+            </div>
+            <div class="swiper-slide">
+                <video src="./images/2.mp4" autoplay muted loop width="100%"></video>
+
+            </div>
+            <div class="swiper-slide">
+                <video src="./images/3.mp4" autoplay muted loop width="100%"></video>
+            </div>
+        </div>
+
+        <div class="swiper-pagination mb2_pag"></div>
+
+    </div>
+
+    <div id="vi_a">
+        <a href=""><img class="img" src="./images/im.jpg" alt=""></a>
+    </div>
+    <div id="in">
+        <h1 class="in_a"> <span style="color:#f26233;">INSTAGRAM</span></h1>
+        <h3 class="in_b"><span style="color:#db8b37;"> 맛있는 판다버거 인스타그램 리뷰</span></h3>
+        <div class="in_c">
+            <a href="https://www.instagram.com/opop2193/"><img src="./images/in.jpg" alt=""></a>
+            <a href="https://www.instagram.com/opop2193/"><img src="./images/in1.jpg" alt=""></a>
+            <a href="https://www.instagram.com/opop2193/"><img src="./images/in2.jpg" alt=""></a>
+        </div>
+    </div>
+    <div id="you_c">
+        <div id="you">
+            <h1 class="you_a"><span style="color: #9f4912;">PANDA</span><span style="color: #f26233;">BUGER</span><span
+                    style="color: #64bc46;">YOUTUBE</span></h1>
+            <h3 class="you_b"><span style="color: #db8b37;">맛있는 판다버거의 생생한 먹방 후기</span></h3>
+            <div class="you_d">
+                <a href="https://www.youtube.com/watch?v=v7VA9U3ZpPw"><img src="./images/yo.jpg" alt=""></a>
+                <a href="https://www.youtube.com/watch?v=v7VA9U3ZpPw"><img src="./images/you2.jpg" alt=""></a>
+                <a href="https://www.youtube.com/watch?v=v7VA9U3ZpPw"><img src="./images/you3.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="foot_inner">
+            <div class="foot_a">
+                <h1 class="foot_b">(주)판다버거</h1>
+                <h3>PANDA BURGER</h3>
+                <p>(주)판다버거는 사업자번호 130-88-751512 부산광역시 사하구 하단동 낙동대로542</p>
+                <p>상기자료는 2023년 2월 8일 공정위 등록 정보공개서를 근거로 작성되었습니다.</p>
+                <p>ⓒ 2019 PANDA F&B. All Rights Reserved.</p>
+            </div>
+            <div class="foot_c">
+                <h1 class="foot_d">고객센터 및 상담센터</h1>
+                <h1 class="foot_g">1544 - 6305</h1>
+                <h2 class="foot_e">평일 : 09:00 ~ 18:00</h2>
+                <h2 class="foot_f">토요일/일요일/공휴일휴무</h2>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="top_btn">
+        <a href="#header"><img src="./images/up-arrow.png" alt=""></a>
+    </div>
+    <script>
+        var swiper = new Swiper(".mb2", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+
+        });
+    </script>
+</body>
+
+
+</html>

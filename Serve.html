@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1550">
+    <title>PandaburgerServe</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./Serve.css">
+    <link rel="stylesheet" href="./Pandaburger.css">
+    <link rel="stylesheet" href="./font/stylesheet.css">
+    <link rel="shortcut icon" href="./images/ccc.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="logo">
+            <a href="./index.html"><img src="./images/a.png" alt="로고이미지"></a>
+        </h1>
+        <ul>
+            <li><a href="#aa">본사조직도</a></li>
+            <li><a href="#ab">창업경쟁력</a></li>
+            <li><a href="#ac">성공보장</a></li>
+            <li><a href="#ad">매출창출</a></li>
+
+
+        </ul>
+        <a href="./pand.html" class="AA">메인홈페이지</a>
+    </div>
+    </div>
+    <div class="swiper mb">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./images/z.jpg" alt="">
+
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/Untitled-2.jpg" alt="">
+
+
+            </div>
+        </div>
+        <div class="swiper-button-next mb_next"></div>
+        <div class="swiper-button-prev mb_prev"></div>
+        <div class="swiper-pagination mb_pag"></div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mb", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+        });
+    </script>
+    <div id="aa">
+        <p><img src="./images/aaa.jpg" alt="" width="100%"></p>
+    </div>
+    <div id="ab">
+        <p><img src="./images/22.jpg" alt="" width="100%"></p>
+    </div>
+    <div id="ac">
+        <p><img src="./images/33.jpg" alt="" width="100%"></p>
+    </div>
+    <div id="ad">
+        <p><img src="./images/44.jpg" alt="" width="100%"></p>
+    </div>
+    <div id="footer">
+        <div class="foot_inner">
+            <div class="foot_a">
+                <h1 class="foot_b">(주)판다버거</h1>
+                <h3>PANDA BURGER</h3>
+                <p>(주)판다버거는 사업자번호 130-88-751512 부산광역시 사하구 하단동 낙동대로542</p>
+                <p>상기자료는 2023년 2월 8일 공정위 등록 정보공개서를 근거로 작성되었습니다.</p>
+                <p>ⓒ 2019 PANDA F&B. All Rights Reserved.</p>
+            </div>
+            <div class="foot_c">
+                <h1 class="foot_d">고객센터 및 상담센터</h1>
+                <h1 class="foot_g">1544 - 6305</h1>
+                <h2 class="foot_e">평일 : 09:00 ~ 18:00</h2>
+                <h2 class="foot_f">토요일/일요일/공휴일휴무</h2>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="top_btn">
+        <a href="#header"><img src="./images/up-arrow.png" alt=""></a>
+    </div>
+</body>
+
+</html>
